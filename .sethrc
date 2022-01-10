@@ -1,0 +1,23 @@
+#!/bin/bash
+
+export DAPP_SOLC_VERSION=0.8.6
+export DAPP_TEST_VERBOSITY=2
+
+export ETH_KEYSTORE=""
+export ETH_RPC_ACCOUNTS=yes
+export ETH_GAS=99999999
+
+function lastTx()
+{
+  seth block latest transactions | jq .[0] -r
+}
+
+function setContractAddress()
+{
+  sed -i 's/^export ADDY=.*//' .sethrc
+  printf 'export ADDY=%s\n' $(seth receipt $(lastTx) contractAddress) >> .sethrc
+  source .sethrc
+}
+
+export aa=""
+export ADDY=""
