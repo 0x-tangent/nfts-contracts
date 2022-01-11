@@ -15,4 +15,5 @@
 | testFailBurnWithUnownedToken           | 86751   | 59139   | -27612   |
 | testFailApproveForNonexistentToken     | 89733   | 60024   | -29709   |
 | testMintOneOrFive                      | 186959  | 163146  | -23813   |
+| testMintOne                            | 83895   | 59718   | -24177   |
 
