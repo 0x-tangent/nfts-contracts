@@ -13,7 +13,7 @@ abstract contract Hevm {
 contract User {
   Alphabet alphabet;
 
-  uint public immutable MINT_PRICE = 0.01 ether;
+  uint public immutable MINT_PRICE = 0.001 ether;
 
   constructor(Alphabet _alphabet) {
     alphabet = _alphabet;
@@ -33,7 +33,7 @@ contract User {
   }
 }
 
-contract AlphabetTest is DSTest {
+contract BatcherTest is DSTest {
   Alphabet alphabet;
   User userA;
   User userB;

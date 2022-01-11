@@ -29,18 +29,20 @@ abstract contract ERC721 {
     ERC721 STORAGE                        
   //////////////////////////////////////////////////////////////*/
 
-  /// @dev to avoid storing redundant data in both `owners` and `balances`
-  //      use an ordered, sequential array so that `index == tokenId`
-  //      this causes `balanceOf` to look a little ugly, but otherwise
-  //      reduces gas for minting and token transfers
+  /** @dev to avoid storing redundant data in both `owners` and `balances`
+  **      use an ordered, sequential array so that `index == tokenId`
+  **      this causes `balanceOf` to look a little ugly, but otherwise
+  **      reduces gas for minting and token transfers
+ */
   address[] public owners;
 
-  /// @dev since we aren't explicitly tracking balances with a `mapping(address => uint)`
-  //      as is normally done, `balanceOf` has to loop through the full array to
-  //      count the user balance. the for loop doesn't add to minting or transfer costs.
-  //      (would only affect gas if another contract relies on balanceOf, in which case,
-  //       it is significantly worse.)
-  //       inspired by this article: https://medium.com/@nftchance/the-cannibalization-of-nfts-by-openzeppelin-by-insanely-high-gas-prices-cd2c9a7c1e7
+  /** @dev since we aren't explicitly tracking balances with a `mapping(address => uint)`
+  **      as is normally done, `balanceOf` has to loop through the full array to
+  **      count the user balance. the for loop doesn't add to minting or transfer costs.
+  **      (would only affect gas if another contract relies on balanceOf, in which case,
+  **       it is significantly worse.)
+  **       inspired by this article: https://medium.com/@nftchance/the-cannibalization-of-nfts-by-openzeppelin-by-insanely-high-gas-prices-cd2c9a7c1e7
+ */
   function balanceOf(address user) public view returns (uint) {
     uint balance = 0;
     for(uint256 i = 0; i < owners.length; i++) {
@@ -89,7 +91,6 @@ abstract contract ERC721 {
 
     return owned;
   }
-
 
   function tokenOfOwnerByIndex(address user, uint256 id) public view returns (uint256) {
     return tokensOfOwner(user)[id];

@@ -1,0 +1,18 @@
+Running 16 tests for src/test/Alphabet.t.sol:AlphabetTest
+[PASS]testTransferForWithApproveAll() (gas: 141224)
+[PASS]testFailApproveForUnownedToken() (gas: 87757)
+[PASS]testFailTransferForWithRevokedApproval() (gas: 205532)
+[PASS]testFailTransferForUnownedTokens() (gas: 274460)
+[PASS]testTransferForWithApprove1() (gas: 143154)
+[PASS]testFailTransferWithoutApproval() (gas: 91011)
+[PASS]testTransferToUserB() (gas: 121563)
+[PASS]testFailMintWrongAmount() (gas: 10024)
+[PASS]testFailMintNotEnoughFunds() (gas: 8812)
+[PASS]testBurnAdjustsUserBalance() (gas: 216910)
+[PASS]testFailBurnWithZeroOwned() (gas: 5257)
+[PASS]testBurnAdjustsTotalSupply() (gas: 2696955)
+[PASS]testFailBurnWithUnownedToken() (gas: 86751)
+[PASS]testFailApproveForNonexistentToken() (gas: 89733)
+[PASS]testMintOneOrFive() (gas: 186959)
+[PASS]testMintOne() (gas: 83895)
+

@@ -1,0 +1,58 @@
+Running 17 tests for src/test/Alphabet.t.sol:AlphabetTest
+[BAIL] testTransferForWithApproveAll()
+[PASS] testFailApproveForUnownedToken() (gas: 9827)
+[PASS] testFailTransferForWithRevokedApproval() (gas: 9849)
+[PASS] testFailTransferForUnownedTokens() (gas: 9871)
+[BAIL] testTransferForWithApprove1()
+[PASS] testFailTransferWithoutApproval() (gas: 9804)
+[BAIL] testTokenByIndex()
+[BAIL] testTransferToUserB()
+[PASS] testFailMintWrongAmount() (gas: 9936)
+[PASS] testFailMintNotEnoughFunds() (gas: 8812)
+[BAIL] testBurnAdjustsUserBalance()
+[PASS] testFailBurnWithZeroOwned() (gas: 4640)
+[BAIL] testBurnAdjustsTotalSupply()
+[PASS] testFailBurnWithUnownedToken() (gas: 9781)
+[PASS] testFailApproveForNonexistentToken() (gas: 9803)
+[BAIL] testMintOneOrFive()
+[BAIL] testMintOne()
+
+Failure: testMintOne
+  
+
+
+Failure: testMintOneOrFive
+  
+
+
+Failure: testBurnAdjustsTotalSupply
+  
+
+
+Failure: testBurnAdjustsUserBalance
+  
+
+
+Failure: testTransferToUserB
+  
+
+
+Failure: testTokenByIndex
+  
+
+
+Failure: testTransferForWithApprove1
+  
+
+
+Failure: testTransferForWithApproveAll
+  
+
+
+Running 1 tests for src/test/Batcher.t.sol:AlphabetTest
+[31m[BAIL][0m testMintOneGetBatch()
+
+Failure: testMintOneGetBatch
+  
+
+

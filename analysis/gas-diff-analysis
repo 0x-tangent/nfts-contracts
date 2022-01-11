@@ -1,0 +1,18 @@
+|           test                         | solmate | mine    |    Δ     |
+|----------------------------------------|---------|---------|----------|
+| testTransferForWithApproveAll          | 141224  | 93833   | -47391   |
+| testFailApproveForUnownedToken         | 87757   | 62886   | -24871   |
+| testFailTransferForWithRevokedApproval | 205532  | 156816  | -48716   |
+| testFailTransferForUnownedTokens       | 274460  | 223850  | -50610   |
+| testTransferForWithApprove1            | 143154  | 97314   | -45840   |
+| testFailTransferWithoutApproval        | 91011   | 66008   | -25003   |
+| testTransferToUserB                    | 121563  | 77115   | -44448   |
+| testFailMintWrongAmount                | 10024   | 9936    | -88      |
+| testFailMintNotEnoughFunds             | 8812    | 8812    | -0       |
+| testBurnAdjustsUserBalance             | 216910  | 176646  | -40264   |
+| testFailBurnWithZeroOwned              | 5257    | 4640    | -617     |
+| testBurnAdjustsTotalSupply             | 2696955 | 2710833 | +13878   |
+| testFailBurnWithUnownedToken           | 86751   | 59139   | -27612   |
+| testFailApproveForNonexistentToken     | 89733   | 60024   | -29709   |
+| testMintOneOrFive                      | 186959  | 163146  | -23813   |
+
