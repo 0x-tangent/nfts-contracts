@@ -21,4 +21,11 @@ from the root directory run:
 | Alphabet.sol   | your nft contract              |
 | Alphabet.t.sol | test file, written in solidity |
 
+## gas differences
+
+a look at gas cost differences among Open Zeppelin, Solmate, and my optimizations.
+
+![oz-mine](./assets/oz-mine-diff.png)
+![oz-solmate](./assets/oz-solmate-diff.png)
+![solmate-mine](./assets/solmate-mine-diff.png)
 
